@@ -20,12 +20,13 @@ Este projeto utiliza OpenCV para capturar uma stream de vídeo de uma câmera IP
 Para instalar as dependências necessárias, você pode usar o seguinte comando:
 
 ```bash
-pip install opencv-python
+pip install opencv-python PyOpenGL mediapipe
+
 ```
 
 ## Como executar
 
-1. **Instale as dependências** utilizando o comando `pip install opencv-python`.
+1. **Instale as dependências** utilizando o comando `pip install opencv-python PyOpenGL mediapipe`.
 2. **Configure o URL da câmera IP**:
     - Altere a variável `url` no código para corresponder ao endereço IP da sua câmera, seguido pela porta e caminho do vídeo.
     - Exemplo: `url = 'http://192.168.1.187:8000/video'`
@@ -136,3 +137,4 @@ cv2.destroyAllWindows()
 
 - Verifique se o seu dispositivo está na mesma rede da câmera IP e se o URL fornecido está correto.
 - Se a detecção não estiver funcionando como esperado, ajuste os parâmetros `scaleFactor` e `minNeighbors` ou verifique se a câmera está transmitindo corretamente.
+

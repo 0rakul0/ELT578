@@ -54,7 +54,7 @@ import cv2
 from deepface import DeepFace
 
 #%% Iniciar câmera
-url = 'http://192.168.1.187:8000/video'  # URL da câmera IP
+url = 'http://192.168.1.119:8000/video'  # URL da câmera IP
 video_capture = cv2.VideoCapture(url)
 
 # Definir dimensões do vídeo
